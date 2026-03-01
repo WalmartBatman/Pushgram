@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="8dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!-- Album Art -->
+    <ImageView
+        android:id="@+id/ivSongArt"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@android:drawable/ic_media_play"
+        android:scaleType="centerCrop"
+        android:background="@color/card_bg" />
+
+    <!-- Title + Artist -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:id="@+id/tvSongTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/tvSongArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="2dp" />
+
+    </LinearLayout>
+
+    <!-- Source badge -->
+    <TextView
+        android:id="@+id/tvSongSource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="▶ YT"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Duration -->
+    <TextView
+        android:id="@+id/tvSongDuration"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/text_secondary"
+        android:gravity="end" />
+
+</LinearLayout>

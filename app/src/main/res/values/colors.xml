@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backgrounds -->
+    <color name="bg_dark">#080A0F</color>
+    <color name="bg_surface">#0F1219</color>
+    <color name="bg_card">#141820</color>
+    <color name="bg_card_elevated">#1C2230</color>
+
+    <!-- Primary accent: Electric Coral -->
+    <color name="accent_primary">#FF2D55</color>
+    <color name="accent_primary_dim">#40FF2D55</color>
+
+    <!-- Secondary accent: Cyan -->
+    <color name="accent_secondary">#00D4FF</color>
+
+    <!-- Gold: Credits/rewards -->
+    <color name="accent_gold">#FFD700</color>
+
+    <!-- Text -->
+    <color name="text_primary">#F0F4FF</color>
+    <color name="text_secondary">#6B7A99</color>
+    <color name="text_muted">#3D4A63</color>
+
+    <!-- States -->
+    <color name="success">#00E676</color>
+    <color name="warning">#FFB300</color>
+    <color name="error">#FF1744</color>
+
+    <!-- Misc -->
+    <color name="white">#FFFFFF</color>
+    <color name="divider">#1A2235</color>
+    <color name="stroke">#1E2A40</color>
+
+    <!-- Legacy aliases for compatibility -->
+    <color name="accent_orange">#FF2D55</color>
+    <color name="accent_blue">#00D4FF</color>
+    <color name="card_bg">#141820</color>
+    <color name="text_secondary_compat">#6B7A99</color>
+    <color name="success_green">#00E676</color>
+</resources>

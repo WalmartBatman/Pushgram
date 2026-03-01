@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PushGram</string>
+    <string name="accessibility_service_label">PushGram Instagram Monitor</string>
+    <string name="accessibility_description">PushGram monitors Instagram to limit reel usage based on your push-up credits.</string>
+
+    <!-- YouTube Data API v3 key (free, 10k units/day)
+         Get it at: console.cloud.google.com → Enable "YouTube Data API v3" → Create Credentials -->
+    <string name="youtube_api_key">YOUR_YOUTUBE_DATA_API_V3_KEY</string>
+
+    <!-- Spotify Web API credentials (free app registration)
+         Get them at: developer.spotify.com/dashboard > Create App
+         Uses Client Credentials flow only, no user login needed -->
+    <string name="spotify_client_id">YOUR_SPOTIFY_CLIENT_ID</string>
+    <string name="spotify_client_secret">YOUR_SPOTIFY_CLIENT_SECRET</string>
+</resources>
