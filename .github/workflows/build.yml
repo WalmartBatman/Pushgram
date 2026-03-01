@@ -24,7 +24,6 @@ jobs:
           mkdir -p gradle/wrapper
           curl -Lo gradle/wrapper/gradle-wrapper.jar \
             https://github.com/gradle/gradle/raw/v7.6.0/gradle/wrapper/gradle-wrapper.jar
-
       - - name: Create Gradle Wrapper Properties
         run: |
           cat > gradle/wrapper/gradle-wrapper.properties << 'EOF'
