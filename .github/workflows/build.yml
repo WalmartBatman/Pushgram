@@ -19,6 +19,22 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
+      - name: Download Gradle Wrapper JAR
+        run: |
+          mkdir -p gradle/wrapper
+          curl -Lo gradle/wrapper/gradle-wrapper.jar \
+            https://github.com/gradle/gradle/raw/v7.6.0/gradle/wrapper/gradle-wrapper.jar
+
+      - name: Create Gradle Wrapper Properties
+        run: |
+          cat > gradle/wrapper/gradle-wrapper.properties << 'EOF'
+          distributionBase=GRADLE_USER_HOME
+          distributionPath=wrapper/dists
+          distributionUrl=https\://services.gradle.org/distributions/gradle-7.6-bin.zip
+          zipStoreBase=GRADLE_USER_HOME
+          zipStorePath=wrapper/dists
+          EOF
+
       - name: Cache Gradle packages
         uses: actions/cache@v4
         with:
