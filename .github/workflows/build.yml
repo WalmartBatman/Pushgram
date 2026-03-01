@@ -23,10 +23,9 @@ jobs:
         run: |
           mkdir -p gradle/wrapper
           curl -Lo gradle/wrapper/gradle-wrapper.jar \
-            https://github.com/gradle/gradle/raw/v7.6.0/gradle/wrapper/gradle-wrapper.jar
-      - - name: Create Gradle Wrapper Properties
-        run: |
-          cat > gradle/wrapper/gradle-wrapper.properties << 'EOF'
+            https://github.com/gradle/gradle/raw/v8.2.0/gradle/wrapper/gradle-wrapper.jar
+      - - name: Create Gradle Wrapper Properties|
+         run: cat > gradle/wrapper/gradle-wrapper.properties << 'EOF'
           distributionBase=GRADLE_USER_HOME
           distributionPath=wrapper/dists
           distributionUrl=https\://services.gradle.org/distributions/gradle-8.2-bin.zip
